@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [    
+        {
+            "name": "Docker: Attach to Server",
+            "type": "node",
+            "request": "attach",
+            "remoteRoot": "/usr/src/app",
+            "localRoot": "${workspaceFolder}/server",
+            "port": 9222,
+            "protocol": "inspector",
+            "restart": true
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+---
+version: '3.2'
+services:
+  server:
+    build:
+      context: ./server
+    environment:
+      NODE_ENV: development
+    ports:
+      - "3000:3000"
+      - "9222:9222"
+    command: ["npm", "run", "debug"]
+    volumes:
+      - ./server:/usr/src/app
