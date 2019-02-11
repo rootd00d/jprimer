@@ -19,9 +19,7 @@
             "args": [
                 "-i",
                 "-c",
-                "${workspaceFolder}/jest.config.js",
-                "--projects",
-                "server"
+                "${workspaceFolder}/server/jest.config.js"
             ],
             "cwd": "${workspaceFolder}/server",
             "internalConsoleOptions": "openOnSessionStart"

@@ -1,5 +1,3 @@
-'use strict';
-
 var app = require('../app');
 var request = require('supertest');
 
@@ -29,6 +27,20 @@ describe("test server endpoint", () => {
     test("a negative should return false", (done) => {
         request(app).get('/primes/-1').expect(200).then((response) => {
             expect(response.body.result).toBe(false);
+            done();
+        })
+    })
+
+    test("a 64-bit prime returns true", (done) => {
+        request(app).get('/primes/902677838694299069').expect(200).then((response) => {
+            expect(response.body.result).toBe(true);
+            done();
+        })
+    })
+
+    test("a 128-bit prime returns true", (done) => {
+        request(app).get('/primes/311374719183590155288120852969307854859').expect(200).then((response) => {
+            expect(response.body.result).toBe(true);
             done();
         })
     })
