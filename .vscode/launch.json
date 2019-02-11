@@ -7,9 +7,24 @@
             "request": "attach",
             "remoteRoot": "/usr/src/app",
             "localRoot": "${workspaceFolder}/server",
-            "port": 9222,
+            "port": 9229,
             "protocol": "inspector",
             "restart": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Jest: Server Tests",
+            "program": "${workspaceRoot}/server/node_modules/jest/bin/jest.js",
+            "args": [
+                "-i",
+                "-c",
+                "${workspaceFolder}/jest.config.js",
+                "--projects",
+                "server"
+            ],
+            "cwd": "${workspaceFolder}/server",
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }
