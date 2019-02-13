@@ -1,4 +1,4 @@
 {
     "eslint.options": { "configFile": ".eslintrc.js" },
-    "jest.showCoverageOnLoad": true
+    "jest.autoEnable": false
 }
