@@ -12,6 +12,7 @@ A simple client-server prime number tester with TDD in mind
 ## Dependencies
 * nvm 0.34.0
 * Node.js 10.15.1
+* Jest 24.1.0
 * docker-ce 18.09+
 * docker-compose 1.22+
 
