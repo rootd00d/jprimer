@@ -9,6 +9,17 @@ services:
     ports:
       - "3000:3000"
       - "9229:9229"
-    command: ["npm", "run", "debug"]
     volumes:
       - ./server:/usr/src/app
+    command: ["npm", "run", "debug"]
+  client:
+    build:
+      context: ./client
+    environment:
+      NODE_ENV: development
+      SERVER_URL: http://server:3000/primes/
+    ports:
+      - "9228:9228"
+    volumes:
+      - ./client:/usr/src/app
+    command: ["npm", "run", "debug"]
