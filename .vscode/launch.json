@@ -1,6 +1,32 @@
 {
     "version": "0.2.0",
-    "configurations": [    
+    "configurations": [
+        {
+            "type": "node",
+            "name": "vscode-jest-tests",
+            "request": "launch",
+            "program": "${fileDirname}/../node_modules/jest/bin/jest.js",
+            "args": [
+                "--runInBand"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Client via NPM",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "debug-local"
+            ],
+            "cwd": "${workspaceFolder}/client",
+            "port": 9227,
+            "protocol": "inspector",
+            "console": "integratedTerminal"
+        },
         {
             "name": "Docker: Attach to Server",
             "type": "node",
@@ -8,6 +34,16 @@
             "remoteRoot": "/usr/src/app",
             "localRoot": "${workspaceFolder}/server",
             "port": 9229,
+            "protocol": "inspector",
+            "restart": true
+        },
+        {
+            "name": "Docker: Attach to Client",
+            "type": "node",
+            "request": "attach",
+            "remoteRoot": "/usr/src/app",
+            "localRoot": "${workspaceFolder}/client",
+            "port": 9228,
             "protocol": "inspector",
             "restart": true
         },
@@ -22,6 +58,19 @@
                 "${workspaceFolder}/server/jest.config.js"
             ],
             "cwd": "${workspaceFolder}/server",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Jest: Client Tests",
+            "program": "${workspaceRoot}/client/node_modules/jest/bin/jest.js",
+            "args": [
+                "-i",
+                "-c",
+                "${workspaceFolder}/client/jest.config.js"
+            ],
+            "cwd": "${workspaceFolder}/client",
             "internalConsoleOptions": "openOnSessionStart"
         }
     ]

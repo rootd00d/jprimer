@@ -2,6 +2,8 @@
   "name": "server",
   "version": "0.0.0",
   "private": true,
+  "author": "Casey Billett <cbillett@xyu.ca> (http://caseyb.info)",
+  "license": "Unlicense",
   "scripts": {
     "start": "node ./bin/www",
     "debug": "nodemon --legacy-watch --watch /usr/src/app --inspect=0.0.0.0:9229 --nolazy ./bin/www"
