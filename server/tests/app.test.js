@@ -1,7 +1,7 @@
 var app = require('../app');
 var request = require('supertest');
 
-describe('test server endpoint', () => {
+describe('test application endpoint', () => {
     test('should not have a post method', (done) => {
         return request(app).post('/primes/').expect(404, done);
     });

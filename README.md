@@ -11,16 +11,26 @@ A simple client-server prime number tester with TDD in mind
 
 ## Usage
 ```
-docker-compose -f docker-compose.server.yml up
+docker-compose -f docker-compose.server.yml up --build
 
-START=12345678901234567890123456789012345678901234567890 node client.js --COUNT=100000
+JPRIMER_START=12345678901234567890123456789012345678901234567890 node client.js --JPRIMER_COUNT=100000
 ```
 
-> Note: Command-line switch values can only be so large -> use environment variables if they get too big.
+> Note: Command-line arguments via `nconf` seem to only be able to be so large, so use environment variables if `JPRIMER_START` or `JPRIMER_COUNT` are huge
+
+## Debugging
+1. Download and install [nvm](https://github.com/creationix/nvm) for your operating system
+2. ```nvm install 10.15.1```
+3. ```nvm use 10.15.1```
+4. ```cd client && npm install && cd ../server && npm install```
+5. ```npm install -g jest```
+6. Install `vscode-jest` extension for VSCode
+
 
 ## Code Coverage
+e.g. [Server](server/coverage/) & [Client](client/coverage/)
 ```
-cd client && jest # -> produces a "coverage" folder
+cd client && jest && cd ../server && jests
 ```
 
 ## Limits

@@ -1,7 +1,5 @@
-#!/usr/bin/env node
-
-var config = require('../config');
-var app = require('../app');
+var config = require('./config');
+var app = require('./app');
 var cluster = require('cluster');
 var http = require('http');
 
@@ -17,8 +15,9 @@ if (cluster.isMaster) {
 }
 else
 {
-    var port = normalizePort(process.env.PORT || '3000');
+    var port = normalizePort(config.get('JPRIMER_PORT'));
     app.set('port', port);
+
     var server = http.createServer(app);
     server.listen(port);
     server.on('error', onError);

@@ -5,8 +5,8 @@
   "author": "Casey Billett <cbillett@xyu.ca> (http://caseyb.info)",
   "license": "Unlicense",
   "scripts": {
-    "start": "node ./bin/www",
-    "debug": "nodemon --legacy-watch --watch /usr/src/app --inspect=0.0.0.0:9229 --nolazy ./bin/www"
+    "start": "node ./server.js",
+    "debug": "nodemon --legacy-watch --watch /usr/src/app --inspect=0.0.0.0:9229 --nolazy ./server.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
