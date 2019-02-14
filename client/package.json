@@ -7,15 +7,14 @@
   "scripts": {
     "start": "node ./client.js",
     "debug": "nodemon --legacy-watch --watch /usr/src/app --inspect-brk=0.0.0.0:9229 --nolazy ./client.js",
-    "debug-local": "nodemon --legacy-watch --watch ./ --inspect=0.0.0.0:9227 --nolazy ./client.js"
+    "debug-local": "nodemon --legacy-watch --watch ./ --inspect-brk=0.0.0.0:9227 --nolazy ./client.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "concurrent-queue": "^7.0.2",
     "debug": "^4.1.1",
     "jest": "^24.1.0",
     "nconf": "^0.10.0"
   },
-  "devDependencies": {
-    "axios-mock-adapter": "^1.16.0"
-  }
+  "devDependencies": {}
 }

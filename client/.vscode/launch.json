@@ -25,6 +25,18 @@
             "protocol": "inspector",
             "restart": true,
             "sourceMaps": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "debug-local"
+            ],
+            "port": 9227,
+            "protocol": "inspector"
         }
     ]
 }

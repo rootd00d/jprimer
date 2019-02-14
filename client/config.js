@@ -4,8 +4,9 @@ function Config() {
     nconf.argv().env();
     nconf.defaults({
         'SERVER': 'http://localhost:3000/primes/',
-        'START': 0,
-        'COUNT': 2
+        'START': '0',
+        'COUNT': '5',
+        'CONCURRENT': 10
     });
 }
 

@@ -9,6 +9,21 @@ A simple client-server prime number tester with TDD in mind
 * Fully tested client and server-side APIs for correctness
 * Handle concurrent client requests in parallel
 
+## Usage
+```
+docker-compose -f docker-compose.server.yml up
+
+START=12345678901234567890123456789012345678901234567890 node client.js --COUNT=100000
+```
+
+> Note: Command-line switch values can only be so large -> use environment variables if they get too big.
+
+## Code Coverage
+```
+cd client && jest # -> produces a "coverage" folder
+```
+
+
 ## Dependencies
 * nvm 0.34.0
 * Node.js 10.15.1
