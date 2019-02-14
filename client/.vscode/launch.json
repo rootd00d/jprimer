@@ -13,7 +13,7 @@
             ],
             "cwd": "${workspaceFolder}",
             "internalConsoleOptions": "openOnSessionStart",
-            "sourceMaps": false
+            "sourceMaps": true
         },
         {
             "name": "Docker: Attach to Client",
@@ -23,7 +23,8 @@
             "localRoot": "${workspaceFolder}",
             "port": 9228,
             "protocol": "inspector",
-            "restart": true
+            "restart": true,
+            "sourceMaps": true
         }
     ]
 }

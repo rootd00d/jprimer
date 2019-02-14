@@ -17,7 +17,7 @@ services:
       context: ./client
     environment:
       NODE_ENV: development
-      SERVER_URL: http://server:3000/primes/
+      SERVER: http://server:3000/primes/
     ports:
       - "9228:9229"
     volumes:
