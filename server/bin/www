@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-var os = require('os');
-var cluster = require('cluster');
+var config = require('../config');
 var app = require('../app');
+var cluster = require('cluster');
 var http = require('http');
 
 if (cluster.isMaster) {
-    for (var i = 0; i < os.cpus().length; i += 1) {
+    for (var i = 0; i < config.get('JPRIMER_CPUS'); i += 1) {
         cluster.fork();
     }
 

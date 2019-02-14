@@ -1,12 +1,14 @@
-var nconf = require('nconf');
+const os = require('os');
+const nconf = require('nconf');
 
 function Config() {
     nconf.argv().env();
     nconf.defaults({
-        'SERVER': 'http://localhost:3000/primes/',
-        'START': '0',
-        'COUNT': '5',
-        'CONCURRENT': 10
+        'JPRIMER_SERVER': 'http://localhost:3000/primes/',
+        'JPRIMER_START': '0',
+        'JPRIMER_COUNT': '8',
+        'JPRIMER_CPUS': os.cpus().length,
+        'JPRIMER_MAXREQUESTS': 100
     });
 }
 
