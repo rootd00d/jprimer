@@ -11,4 +11,5 @@ docker-compose*
 README.md
 LICENSE
 .vscode
-server/node_modules
+coverage
+

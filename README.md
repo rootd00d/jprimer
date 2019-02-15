@@ -25,7 +25,10 @@ JPRIMER_START=12345678901234567890123456789012345678901234567890 node client.js 
 4. ```cd client && npm install && cd ../server && npm install```
 5. ```npm install -g jest```
 6. Install `vscode-jest` extension for VSCode
+7. Launch `docker-compose -f docker-compose.debug.yml up --build`
+> Docker server will now be running and the client containerized process is waiting for a debugger to attach
 
+It is also possible to run the server using `docker-compose.server.yml` and launch the client either as a container or directly from VSCode.
 
 ## Code Coverage
 e.g. [Server](server/coverage/) & [Client](client/coverage/)
@@ -34,9 +37,10 @@ cd client && jest && cd ../server && jests
 ```
 
 ## Limits
+> As of the last few checkins, using client-side throttling of requests, this shouldn't be a problem.  A user can experiment with setting the `JPRIMER_START` and `JPRIMER_COUNT` environment variables to search for a near-limitless number of primes
 * The node client process, if unbounded, will make as many promises at once as possible
 * Performing a near limitless number of requests (as is made possible through the use of JSBN) at once is a "bad idea," and will exhaust all available client memory quite readily
-* Below, you can see an 8GB client machine fall over at roughly 400,000 requests, after an elapsed 38 seconds... without a single request having yet been sent -- something can be done to enable large search regions
+* Below, you can see an 8GB client machine fall over at roughly 400,000 requests, after an elapsed 38 seconds... without a single request having yet been sent -- -something can be done to enable large search regions
 ```
 numWorkers: 436556
 
@@ -72,11 +76,14 @@ Aborted
 
 
 ## Dependencies
+### Running
+* docker-ce 18.09+
+* docker-compose 1.22+
+
+### Development & Debugging
 * nvm 0.34.0
 * Node.js 10.15.1
 * Jest 24.1.0
-* docker-ce 18.09+
-* docker-compose 1.22+
 
 # References
 [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
@@ -90,3 +97,4 @@ Aborted
 
 [Node.js Cluster and Express](https://rowanmanning.com/posts/node-cluster-and-express/)
 
+[Mocking Axios in Jest + Testing Async Functions](https://www.leighhalliday.com/mocking-axios-in-jest-testing-async-functions)
