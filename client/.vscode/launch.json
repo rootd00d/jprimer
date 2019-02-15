@@ -29,14 +29,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch via NPM",
-            "runtimeExecutable": "npm",
-            "runtimeArgs": [
-                "run-script",
-                "debug-local"
-            ],
-            "port": 9227,
-            "protocol": "inspector"
+            "name": "Launch Client",
+            "program": "${workspaceFolder}/src/client.js"
         }
     ]
 }

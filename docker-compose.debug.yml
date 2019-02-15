@@ -11,7 +11,7 @@ services:
       - "9229:9229"
     volumes:
       - ./server:/usr/src/app
-    command: ["npm", "run", "debug"]
+    command: ["npm", "run", "debug-docker"]
   client:
     build:
       context: ./client
@@ -22,5 +22,5 @@ services:
       - "9228:9229"
     volumes:
       - ./client:/usr/src/app
-    command: ["npm", "run", "debug"]
+    command: ["npm", "run", "debug-docker"]
 

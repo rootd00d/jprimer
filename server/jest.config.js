@@ -8,5 +8,5 @@ module.exports = {
         '!**/node_modules/**',
         '!**/coverage/**',
         '!**/jest.config.js'
-    ]        
+    ]
 };

@@ -1,4 +1,4 @@
-var app = require('../app');
+var app = require('../src/app');
 var request = require('supertest');
 
 describe('test application endpoint', () => {

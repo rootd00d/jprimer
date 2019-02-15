@@ -1,5 +1,5 @@
 const axios = require('axios');
-const search = require('../search');
+const search = require('../src/search');
 
 jest.mock('axios');
 

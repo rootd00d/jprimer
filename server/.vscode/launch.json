@@ -9,7 +9,9 @@
             "args": [
                 "-i",
                 "-c",
-                "${workspaceFolder}/jest.config.js"
+                "${workspaceFolder}/jest.config.js",
+                "--outputFile",
+                "/tmp/jest_runner_server.json"
             ],
             "cwd": "${workspaceFolder}",
             "internalConsoleOptions": "openOnSessionStart",
@@ -24,6 +26,12 @@
             "port": 9229,
             "protocol": "inspector",
             "restart": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Server",
+            "program": "${workspaceFolder}/src/server.js"
         }
     ]
 }

@@ -5,9 +5,9 @@
   "author": "Casey Billett <cbillett@xyu.ca> (http://caseyb.info)",
   "license": "Unlicense",
   "scripts": {
-    "start": "node --max-old-space-size=8192 ./client.js",
-    "debug": "nodemon --legacy-watch --watch /usr/src/app --inspect-brk=0.0.0.0:9229 --nolazy ./client.js",
-    "debug-local": "nodemon --legacy-watch --watch ./ --inspect-brk=0.0.0.0:9227 --nolazy ./client.js"
+    "start": "node --max-old-space-size=8192 ./src/client.js",
+    "debug-docker": "nodemon --legacy-watch --watch /usr/src/app --inspect-brk=0.0.0.0:9229 --nolazy ./src/client.js",
+    "debug-local": "nodemon --legacy-watch --watch ./ --nolazy ./src/client.js"
   },
   "dependencies": {
     "axios": "^0.18.0",

@@ -1,4 +1,6 @@
 {
-    "jest.debugMode": true,
-    "eslint.options": { "configFile": "../.eslintrc.js" }
+    "eslint.options": {
+        "configFile": "../.eslintrc.js"
+    },
+    "eslint.enable": true
 }

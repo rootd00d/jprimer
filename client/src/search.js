@@ -24,16 +24,15 @@ module.exports = async (start, count) => {
             });
         }
 
-        totalScheduled = totalScheduled.add(one);
-        
-        console.debug(`elapsed: ${(new Date() - epoch).toString()} queueSize ${queue.size} totalScheduled: ${totalScheduled.toString()}`);
-
         queue(i.toString()).then(function (response) {
             output(response);
             console.log(`queueSize: ${queue.size}`);
         }).catch((error) => {
             console.log(error);
         });
+
+        totalScheduled = totalScheduled.add(one);
+        console.debug(`elapsed: ${(new Date() - epoch).toString()} queueSize ${queue.size} totalScheduled: ${totalScheduled.toString()}`);
     }
 
     return queue;

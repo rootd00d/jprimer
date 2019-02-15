@@ -1,4 +1,4 @@
-var output = require('../output');
+var output = require('../src/output');
 
 describe('test client output functionality', () => {
     test('rejects non-numeric values', (done) => {

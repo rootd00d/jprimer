@@ -1,5 +1,5 @@
 var axios = require('axios');
-var request = require('../request');
+var request = require('../src/request');
 
 jest.mock('axios');
 
