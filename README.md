@@ -40,7 +40,7 @@ cd client && jest && cd ../server && jests
 > As of the last few checkins, using client-side throttling of requests, this shouldn't be a problem.  A user can experiment with setting the `JPRIMER_START` and `JPRIMER_COUNT` environment variables to search for a near-limitless number of primes
 * The node client process, if unbounded, will make as many promises at once as possible
 * Performing a near limitless number of requests (as is made possible through the use of JSBN) at once is a "bad idea," and will exhaust all available client memory quite readily
-* Below, you can see an 8GB client machine fall over at roughly 400,000 requests, after an elapsed 38 seconds... without a single request having yet been sent -- -something can be done to enable large search regions
+* Below, you can see an 8GB client machine fall over at roughly 400,000 requests, after an elapsed 38 seconds... without a single request having yet been sent -- something can be done to enable large search regions
 ```
 numWorkers: 436556
 

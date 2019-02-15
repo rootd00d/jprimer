@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1550148884231" clover="3.2.0">
-  <project timestamp="1550148884231" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1550271830213" clover="3.2.0">
+  <project timestamp="1550271830213" name="All files">
+    <metrics statements="53" coveredstatements="48" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="11" elements="71" coveredelements="65" complexity="0" loc="53" ncloc="53" packages="1" files="5" classes="5"/>
+    <file name="client.js" path="/home/caseyb/git/jprimer/client/src/client.js">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="0" type="stmt"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+    </file>
+    <file name="config.js" path="/home/caseyb/git/jprimer/client/src/config.js">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="17" count="40025" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+    </file>
+    <file name="output.js" path="/home/caseyb/git/jprimer/client/src/output.js">
+      <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="20013" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="20012" type="cond" truecount="2" falsecount="0"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="10" count="20011" type="stmt"/>
+      <line num="11" count="20011" type="stmt"/>
+    </file>
+    <file name="request.js" path="/home/caseyb/git/jprimer/client/src/request.js">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="5" count="20012" type="stmt"/>
+      <line num="6" count="20012" type="stmt"/>
+      <line num="8" count="20011" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+    </file>
+    <file name="search.js" path="/home/caseyb/git/jprimer/client/src/search.js">
+      <metrics statements="26" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="12" count="20010" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="21" count="20010" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="27" count="20010" type="stmt"/>
+      <line num="28" count="20010" type="stmt"/>
+      <line num="29" count="20010" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="34" count="20010" type="stmt"/>
+      <line num="35" count="20010" type="stmt"/>
+      <line num="38" count="2" type="stmt"/>
+    </file>
   </project>
 </coverage>

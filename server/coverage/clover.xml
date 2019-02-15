@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1550150860156" clover="3.2.0">
-  <project timestamp="1550150860156" name="All files">
-    <metrics statements="63" coveredstatements="25" conditionals="17" coveredconditionals="1" methods="8" coveredmethods="3" elements="88" coveredelements="29" complexity="0" loc="63" ncloc="63" packages="1" files="3" classes="3"/>
-    <file name="app.js" path="/home/caseyb/git/jprimer/server/app.js">
+<coverage generated="1550271784412" clover="3.2.0">
+  <project timestamp="1550271784413" name="All files">
+    <metrics statements="69" coveredstatements="26" conditionals="19" coveredconditionals="1" methods="9" coveredmethods="3" elements="97" coveredelements="30" complexity="0" loc="69" ncloc="69" packages="1" files="4" classes="4"/>
+    <file name="app.js" path="/home/caseyb/git/jprimer/server/src/app.js">
       <metrics statements="18" coveredstatements="17" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
@@ -23,7 +23,16 @@
       <line num="29" count="7" type="stmt"/>
       <line num="32" count="1" type="stmt"/>
     </file>
-    <file name="config.js" path="/home/caseyb/git/jprimer/server/config.js">
+    <file name="busywait.js" path="/home/caseyb/git/jprimer/server/src/busywait.js">
+      <metrics statements="6" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="7" count="0" type="stmt"/>
+    </file>
+    <file name="config.js" path="/home/caseyb/git/jprimer/server/src/config.js">
       <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
@@ -35,7 +44,7 @@
       <line num="20" count="0" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
     </file>
-    <file name="server.js" path="/home/caseyb/git/jprimer/server/server.js">
+    <file name="server.js" path="/home/caseyb/git/jprimer/server/src/server.js">
       <metrics statements="36" coveredstatements="0" conditionals="15" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <line num="1" count="0" type="stmt"/>
       <line num="2" count="0" type="stmt"/>
