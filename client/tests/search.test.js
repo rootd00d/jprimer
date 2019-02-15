@@ -1,12 +1,13 @@
-var axios = require('axios');
-var search = require('../search');
+const axios = require('axios');
+const search = require('../search');
 
 jest.mock('axios');
 
 describe('test search functionality', () => {
-    test('searches the right number of times', (done) => {
+    test('searches the right number of times', async (done) => {
         axios.get.mockResolvedValue({ data: { number: 7, result: false } });
-        search('1', '10').drained(() => {
+        var queue = await search('1', '10');
+        queue.drained(() => {
             expect(axios.get).toHaveBeenCalledTimes(10);
             done();
         });

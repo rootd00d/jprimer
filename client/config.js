@@ -8,7 +8,8 @@ function Config() {
         'JPRIMER_START': '0',
         'JPRIMER_COUNT': '8',
         'JPRIMER_CPUS': os.cpus().length,
-        'JPRIMER_MAXREQUESTS': 100
+        'JPRIMER_QUEUE_MAX_DEPTH': 10000,
+        'JPRIMER_QUEUE_TIMEOUT': 5000
     });
 }
 

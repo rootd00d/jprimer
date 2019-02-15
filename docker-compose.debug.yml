@@ -17,9 +17,10 @@ services:
       context: ./client
     environment:
       NODE_ENV: development
-      SERVER: http://server:3000/primes/
+      JPRIMER_SERVER: http://server:3000/primes/
     ports:
       - "9228:9229"
     volumes:
       - ./client:/usr/src/app
     command: ["npm", "run", "debug"]
+

@@ -15,4 +15,4 @@ services:
       context: ./client
     environment:
       NODE_ENV: production
-      SERVER: http://server:3000/primes/
+      JPRIMER_SERVER: http://server:3000/primes/
