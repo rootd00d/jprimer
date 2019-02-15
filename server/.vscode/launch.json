@@ -31,7 +31,8 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Server",
-            "program": "${workspaceFolder}/src/server.js"
+            "program": "${workspaceFolder}/src/server.js",
+            "autoAttachChildProcesses": true
         }
     ]
 }
